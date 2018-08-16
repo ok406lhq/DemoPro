@@ -38,7 +38,7 @@ export default class MyTabView extends Component {
         cutLineHeight: 0.2,
         barStyle: 'light-content',
         isTransparent: false
-    }
+    };
 
     render() {
         var params = this.props;
