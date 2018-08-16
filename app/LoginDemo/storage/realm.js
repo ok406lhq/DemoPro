@@ -1,6 +1,6 @@
 /**
  *
- * Created by zerowolf on 2017/11/14.
+ * 数据库
  */
 import {Platform} from "react-native";
 
