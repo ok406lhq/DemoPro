@@ -114,7 +114,7 @@ export default class VideoPlayer extends Component {
                             this.video = ref
                         }}
                         /* For ExoPlayer */
-                        /* source={{ uri: 'http://www.youtube.com/api/manifest/dash/id/bf5bb2419360daf1/source/youtube?as=fmp4_audio_clear,fmp4_sd_hd_clear&sparams=ip,ipbits,expire,source,id,as&ip=0.0.0.0&ipbits=0&expire=19000000000&signature=51AF5F39AB0CEC3E5497CD9C900EBFEAECCCB5C7.8506521BFC350652163895D4C26DEE124209AA9E&key=ik0', type: 'mpd' }} */
+                        /* source={{ uri: 'https://gslb.miaopai.com/stream/HNkFfNMuhjRzDd-q6j9qycf54OaKqInVMu0YhQ__.mp4?ssig=bbabfd7684cae53660dc2d4c2103984e&time_stamp=1533631567740&cookie_id=&vend=1&os=3&partner=1&platform=2&cookie_id=&refer=miaopai&scid=HNkFfNMuhjRzDd-q6j9qycf54OaKqInVMu0YhQ__', type: 'mpd' }} */
                         source={require('../../background.mp4')}
                         style={styles.fullScreen}
                         rate={this.state.rate}
@@ -153,19 +153,15 @@ export default class VideoPlayer extends Component {
                             {this.renderResizeModeControl('stretch')}
                         </View>
                     </View>
-
-                    <View >
-                        <View style={styles.progress}>
-                            <View style={[styles.innerProgressCompleted, {flex: flexCompleted}]}/>
-                            <View style={[styles.innerProgressRemaining, {flex: flexRemaining}]}/>
-                        </View>
-                    </View>
+        <View style={styles.progress}>
+            <View style={[styles.innerProgressCompleted, {flex: flexCompleted}]}/>
+            <View style={[styles.innerProgressRemaining, {flex: flexRemaining}]}/>
+        </View>
                 </View>
             </View>
         );
     }
 }
-
 
 const styles = StyleSheet.create({
     container: {
