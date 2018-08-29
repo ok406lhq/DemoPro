@@ -12,6 +12,7 @@
     "prop-types": "latest",
     "react": "16.4.1",
     "react-native": "0.55.2",
+    "react-native-image-picker": "^0.26.10",
     "react-native-keyboard-aware-scroll-view": "^0.6.0",
     "react-native-linear-gradient": "^2.4.0",
     "react-native-storage": "^0.2.2",
